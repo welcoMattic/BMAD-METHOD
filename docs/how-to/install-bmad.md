@@ -49,7 +49,6 @@ Pick which AI tools you use:
 
 - Claude Code
 - Cursor
-- Mistral Vibe
 - Others
 
 Each tool has its own way of integrating skills. The installer creates tiny prompt files to activate workflows and agents — it just puts them where your tool expects to find them.
