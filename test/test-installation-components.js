@@ -1602,7 +1602,7 @@ async function runTests() {
     const platformCodes29 = await loadPlatformCodes();
     const mistralInstaller = platformCodes29.platforms.mistral?.installer;
 
-    assert(mistralInstaller?.target_dir === '.mistral/skills', 'Mistral Vibe target_dir uses native skills path');
+    assert(mistralInstaller?.target_dir === '.vibe/skills', 'Mistral Vibe target_dir uses native skills path');
     assert(mistralInstaller?.skill_format === true, 'Mistral Vibe installer enables native skill output');
     assert(mistralInstaller?.template_type === 'default', 'Mistral Vibe installer uses default skill template');
 
@@ -1634,7 +1634,7 @@ async function runTests() {
     const detectedAfter29 = await ideManager29.detectInstalledIdes(tempProjectDir29);
     assert(detectedAfter29.includes('mistral'), 'Mistral Vibe is detected after install');
 
-    const skillFile29 = path.join(tempProjectDir29, '.mistral', 'skills', 'bmad-master', 'SKILL.md');
+    const skillFile29 = path.join(tempProjectDir29, '.vibe', 'skills', 'bmad-master', 'SKILL.md');
     assert(await fs.pathExists(skillFile29), 'Mistral Vibe install writes SKILL.md directory output');
 
     // Parse YAML frontmatter between --- markers
