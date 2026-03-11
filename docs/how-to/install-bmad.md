@@ -84,7 +84,7 @@ your-project/
 ├── .cursor/            # Cursor skills (if using Cursor)
 │   └── skills/
 │       └── ...
-└── .mistral/           # Mistral Vibe skills (if using Mistral Vibe)
+└── .vibe/              # Mistral Vibe skills (if using Mistral Vibe)
     └── skills/
         └── ...
 ```
